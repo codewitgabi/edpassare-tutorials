@@ -49,7 +49,6 @@ else:
     will_be_going_to_school = "We can't say"
 
 
-
 print(f"Will I be going to school on {today}", will_be_going_to_school)
 
 #  Loops
@@ -68,4 +67,29 @@ while i < 1000:
 
 # Assignment
 
+"""
+1. There is a popular exercise in programming called fizzbuzz.
 
+Here is your task to complete.
+
+Write a python program that gets a user input, if the number is divisible by 3, print 'Fizz'. If it's divisible by 5, print 'Buzz' and if it's divisible by both 3 and 5, print 'FizzBuzz'.
+
+=> You're most likely going to face challenge with checking if the number is divisible by both 3 and 5. That's why your actual control flow question lie.
+
+2. Calculate the sum of 1 to a given number.:
+
+Say for instance you are given a number 10, add all numbers from 1 up to 10 and print out the sum.
+
+3. Print multiplication table of a given number:
+
+Say you are given the number 5, your program should print this
+
+5 x 1 = 5
+5 x 2 = 10
+5 x 3 = 15
+5 x 4 = 20
+5 x 5 = 25
+5 x 6 = 30.... up to 5 x 12
+
+Goodluck
+"""
