@@ -66,6 +66,30 @@ print(dir(tuple))
 
 print(dir(my_tuple))
 
+my_tuple = (1, 2, 3, True, 1, 4, 2, 1, 2)
+
+a_list = ["Me", "You", "Them"]
+
+print("Type of a list", a_list)
+
+# str, int, list, tuple
+
+# print(type(my_tuple))
+
+# my_tuple[]
+
+# print(my_tuple[-1], my_tuple[3])
+
+
+# my_tuple[0] = 5
+
+# print(dir(my_tuple))
+
+# print(len(my_tuple))
+
+print(my_tuple.count(1))
+print(my_tuple.index(1))
+
 
 """Assignment"""
 
