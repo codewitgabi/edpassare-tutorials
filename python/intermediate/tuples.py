@@ -99,3 +99,9 @@ print(my_tuple.index(1))
 """tup = (1, True, 'Me')
 print(tup.count(True))
 """
+
+list_ = [1, 3, 4, 5]
+
+list_to_tuple = tuple(list_)
+
+print("List to tuple", list_to_tuple)
