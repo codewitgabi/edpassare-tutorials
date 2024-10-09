@@ -25,6 +25,9 @@ print("e", e)
 # Floor division
 
 f = a / b
+
+# Int division
+
 g = a // b
 
 print("f", f)
@@ -34,3 +37,9 @@ print("g", g)
 
 print("5 % 3 =", 5 % 3)
 print("4 % 2 =", 4 % 2)
+
+
+# Assignment operator
+# Uses a single equal to sign (=)
+
+# a = 4
