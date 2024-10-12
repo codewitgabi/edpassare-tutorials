@@ -39,3 +39,24 @@ button2.addEventListener("click", () => {
 /**
  * Create two elements in your html file. ONe should be a button and the other should be a div or span element. THe span element should hold the value of the number of times the button is clicked. This means that once the button you created is clicked, the value of the number of span or div element should be incremented by 1.
  */
+
+// * Solution
+
+const countButton = document.querySelector("#count-button");
+const countSpan = document.querySelector("#count");
+
+let count = 0;
+
+countButton.addEventListener("click", () => {
+  countSpan.textContent = ++count;
+});
+
+// querySelectorAll
+
+const firstBox = document.querySelector(".box");
+
+console.log({ firstBox });
+
+const allBoxes = document.querySelectorAll(".box");
+
+console.log({ allBoxes });

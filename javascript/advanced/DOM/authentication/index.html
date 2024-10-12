@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Authentication</title>
+
+    <!-- External styles -->
+
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="form-container">
+      <div id="message"></div>
+
+      <form id="login-form" method="post">
+        <!-- Username field -->
+        <input
+          type="text"
+          placeholder="Enter your username"
+          required
+          id="username"
+          name="username"
+        />
+
+        <!-- Password field -->
+        <input
+          type="password"
+          placeholder="Enter your password"
+          required
+          id="password"
+          name="password"
+        />
+
+        <button type="submit">Login to the app</button>
+      </form>
+    </div>
+
+    <!-- Scripts -->
+
+    <script src="./index.js"></script>
+  </body>
+</html>
