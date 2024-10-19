@@ -48,4 +48,35 @@ print(next(fibonacci_generator))
 
 # * Write a Python program that creates a generator function that generates the next palindrome number after a given number.
 
-# * palindrome_generator(1) 2 3 4 5 6 7 8 9 11 22 33 
+# * palindrome_generator(1) 2 3 4 5 6 7 8 9 11 22 33
+
+
+# Solution
+
+def next_palindrome(number):
+    # * 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22
+
+    while True:
+        number += 1
+
+        if str(number) == str(number)[::-1]:
+            yield number
+
+
+
+print("\n============ Next Palindrome ================")
+
+palindrome = next_palindrome(11)
+
+print(next(palindrome))
+print(next(palindrome))
+
+
+a = 5
+
+if a > 5:
+    print("a is greater than 5")
+elif a == 5:
+    print("a is equal to 5")
+else:
+    print()
