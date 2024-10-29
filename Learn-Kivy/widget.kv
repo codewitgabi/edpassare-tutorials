@@ -1,0 +1,16 @@
+<EventWidget>:
+    BoxLayout:
+        orientation: "vertical"
+        size: root.size
+
+        Button:
+            id: btn
+            text: "I am a button"
+            on_press:
+                root.print_user_input()
+
+        TextInput:
+            id: user_input
+            multiline: False
+            on_text_validate:
+                root.print_user_input()
