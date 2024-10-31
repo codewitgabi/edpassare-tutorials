@@ -1,0 +1,91 @@
+<CalculatorWidget>:
+    BoxLayout:
+        size: root.size
+        orientation: "vertical"
+        size_hint_y: 1
+
+        TextInput:
+            multiline: False
+            focus: True
+            size_hint_y: 0.3
+        
+        GridLayout:
+            cols: 4
+            rows: 3
+            size_hint_y: 0.42
+
+            # Row 1
+
+            Button:
+                text: "AC"
+
+            Button:
+                text: "÷"
+
+            Button:
+                text: "x"
+
+            Button:
+                text: "DEL"
+
+            # Row 2
+
+            Button:
+                text: "7"
+
+            Button:
+                text: "8"
+
+            Button:
+                text: "9"
+
+            Button:
+                text: "-"
+
+            # Row 3
+
+            Button:
+                text: "4"
+
+            Button:
+                text: "5"
+
+            Button:
+                text: "6"
+
+            Button:
+                text: "+"
+
+        BoxLayout:
+            size_hint_y: 0.28
+            
+            GridLayout:
+                cols: 3
+                rows: 2
+                size_hint_x: 0.75
+
+                # Row 1
+
+                Button:
+                    text: "1"
+
+                Button:
+                    text: "2"
+
+                Button:
+                    text: "3"
+
+                # Row 2
+
+                Button:
+                    text: "."
+
+                Button:
+                    text: "0"
+
+                Button:
+                    text: "%"
+
+            Button:
+                size_hint_x: 0.25
+                text: "="
