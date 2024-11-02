@@ -6,6 +6,7 @@
         spacing: 1
 
         TextInput:
+            id: input_field
             multiline: False
             focus: True
             size_hint_y: 0.3
@@ -41,6 +42,7 @@
                 background_normal: '' # Remove the default background
                 background_down: ''
                 color: 234/255, 122/255, 244/255, .6
+                on_press: root.on_clear()
 
             Button:
                 text: "÷"
@@ -49,6 +51,7 @@
                 background_down: ''
                 font_size: "25dp"
                 color: 234/255, 122/255, 244/255, .6
+                on_press: root.on_operator(self)
 
             Button:
                 text: "x"
@@ -57,6 +60,7 @@
                 background_down: ''
                 font_size: "20dp"
                 color: 234/255, 122/255, 244/255, .6
+                on_press: root.on_operator(self)
 
             Button:
                 text: "DEL"
@@ -64,6 +68,7 @@
                 background_normal: '' # Remove the default background
                 background_down: ''
                 color: 1, 1, 1, 0.6
+                on_press: root.on_delete()
 
             # Row 2
 
@@ -74,6 +79,7 @@
                 background_down: ''
                 font_size: "20dp"
                 color: 1, 1, 1, 0.6
+                on_press: root.on_click(self)
 
             Button:
                 text: "8"
@@ -82,6 +88,7 @@
                 background_down: ''
                 font_size: "20dp"
                 color: 1, 1, 1, 0.6
+                on_press: root.on_click(self)
 
             Button:
                 text: "9"
@@ -90,6 +97,7 @@
                 background_down: ''
                 font_size: "20dp"
                 color: 1, 1, 1, 0.6
+                on_press: root.on_click(self)
 
             Button:
                 text: "-"
@@ -98,6 +106,7 @@
                 background_down: ''
                 font_size: "30dp"
                 color: 1, 1, 1, 0.6
+                on_press: root.on_operator(self)
 
             # Row 3
 
@@ -108,6 +117,7 @@
                 background_down: ''
                 font_size: "20dp"
                 color: 1, 1, 1, 0.6
+                on_press: root.on_click(self)
 
             Button:
                 text: "5"
@@ -116,6 +126,7 @@
                 background_down: ''
                 font_size: "20dp"
                 color: 1, 1, 1, 0.6
+                on_press: root.on_click(self)
 
             Button:
                 text: "6"
@@ -124,6 +135,7 @@
                 background_down: ''
                 font_size: "20dp"
                 color: 1, 1, 1, 0.6
+                on_press: root.on_click(self)
 
             Button:
                 text: "+"
@@ -132,6 +144,7 @@
                 background_down: ''
                 font_size: "25dp"
                 color: 1, 1, 1, 0.6
+                on_press: root.on_operator(self)
 
         BoxLayout:
             size_hint_y: 0.28
@@ -152,6 +165,7 @@
                     background_down: ''
                     font_size: "20dp"
                     color: 1, 1, 1, 0.6
+                    on_press: root.on_click(self)
 
                 Button:
                     text: "2"
@@ -160,6 +174,7 @@
                     background_down: ''
                     font_size: "20dp"
                     color: 1, 1, 1, 0.6
+                    on_press: root.on_click(self)
 
                 Button:
                     text: "3"
@@ -168,6 +183,7 @@
                     background_down: ''
                     font_size: "20dp"
                     color: 1, 1, 1, 0.6
+                    on_press: root.on_click(self)
 
                 # Row 2
 
@@ -180,6 +196,7 @@
                     valign: "center"
                     halign: "center"
                     color: 1, 1, 1, 0.6
+                    on_press: root.on_click(self)
 
                 Button:
                     text: "0"
@@ -188,6 +205,7 @@
                     background_down: ''
                     font_size: "20dp"
                     color: 1, 1, 1, 0.6
+                    on_press: root.on_click(self)
 
                 Button:
                     text: "%"
@@ -196,6 +214,7 @@
                     background_down: ''
                     font_size: "20dp"
                     color: 1, 1, 1, 0.6
+                    on_press: root.on_operator(self)
 
             Button:
                 size_hint_x: 0.25
@@ -205,4 +224,5 @@
                 background_down: ''
                 font_size: "25dp"
                 color: 1, 1, 1, 0.6
+                on_press: root.on_equal_to()
                 
