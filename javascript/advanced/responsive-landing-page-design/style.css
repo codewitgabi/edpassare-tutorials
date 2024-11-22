@@ -173,3 +173,89 @@ body {
 .community-cards div p {
   margin-top: 0.5em;
 }
+
+/* Rafiki section */
+
+.rafiki-section {
+  width: var(--width);
+  margin: 5em auto 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  gap: 3em;
+}
+
+.rafiki-section h3 {
+  font-size: 2rem;
+  font-weight: 400;
+  opacity: 0.8;
+}
+
+.rafiki-section p {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  margin-top: 1em;
+}
+
+.rafiki-section a {
+  background-color: var(--green);
+  color: #fff;
+  padding: 1em 2em;
+  font-size: 0.75rem;
+  display: inline-block;
+  margin-top: 1em;
+  border-radius: 5px;
+}
+
+/* Result section */
+
+.result-section {
+  background-color: var(--secondary-background);
+  margin-top: 5em;
+  padding: 2em;
+}
+
+.result-section > div {
+  width: var(--width);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  gap: 1em;
+}
+
+.result-section > div > div:first-child h4 {
+  font-size: 1.4rem;
+  font-weight: 500;
+  opacity: 0.8;
+}
+
+.result-section > div > div:first-child h4:nth-child(2) {
+  color: var(--green);
+}
+
+.result-section > div > div:first-child p {
+  font-size: 0.75rem;
+}
+
+.result-section > div > div:last-child {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 10px;
+}
+
+.result-section > div > div:last-child .result {
+  display: flex;
+  align-items: center;
+  gap: 1em;
+}
+
+.result-section > div > div:last-child .result p {
+  font-weight: 600;
+  opacity: 0.7;
+}
+
+.result-section > div > div:last-child .result span {
+  font-size: 0.75rem;
+  opacity: 0.7;
+}
