@@ -21,6 +21,10 @@ body {
   font-family: "Poppins", sans-serif;
 }
 
+.hide {
+  display: none !important;
+}
+
 /* Hero Section */
 
 .hero-section {
@@ -258,4 +262,25 @@ body {
 .result-section > div > div:last-child .result span {
   font-size: 0.75rem;
   opacity: 0.7;
+}
+
+@media only screen and (max-width: 1240px) {
+  .hero-section .top-nav #nav-bar {
+    width: initial;
+  }
+}
+
+@media only screen and (max-width: 715px) {
+  .hero-section .top-nav #nav-bar #nav-links {
+    display: none !important;
+  }
+
+  .auth-links {
+    display: none;
+  }
+
+  header nav i.bi-list {
+    display: initial !important;
+    font-size: 1.5rem;
+  }
 }
